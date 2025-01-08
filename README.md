@@ -5,7 +5,7 @@ Below is a minimal, self-contained Python script that illustrates how one might 
 
 1. Sets up a regular 2D observation grid.  
 2. Creates a collection of randomly located (and buried) point‐source anomalies (dipoles).  
-3. Computes the total magnetic anomaly \(B_A\) at each grid point assuming an induced magnetization by a uniform background (earth’s) field \(\mathbf{B}_0\).  
+3. Computes the total magnetic anomaly $B_A$ at each grid point assuming an induced magnetization by a uniform background (earth’s) field \(\mathbf{B}_0\).  
 
 **Important Note**  
 In real geophysical modeling, one often measures a specific component of the magnetic field (often the vertical component \(B_z\) or the total field) and uses more sophisticated formulas for dipole fields, including directional effects.  For simplicity, this example shows how you might compute _just the vertical component_ of the induced anomaly from multiple dipole sources.  You can modify the code if you need other components or a full vector field.
