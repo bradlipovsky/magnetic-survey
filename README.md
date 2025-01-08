@@ -39,18 +39,18 @@ where
 
 When summing over multiple point dipoles, simply add the contributions from each dipole at each grid cell.
 
-### How This Code Works
+## 2. How This Code Works
 
-1. **dipole_vertical_anomaly(...)**  
+A. **dipole_vertical_anomaly(...)**  
    A helper function that, given a grid point \((x,y)\) and dipole parameters \((x_0, y_0, z_0, m)\), computes the vertical component of the anomaly.
 
-2. **synthetic_magnetic_survey(...)**  
+B. **synthetic_magnetic_survey(...)**  
    - Creates a 2D grid of shape \((\text{ny}, \text{nx})\).  
    - Generates \(n_{\text{anomalies}}\) random dipoles, each with random \((x_0, y_0)\) within the grid bounds, a random depth \(z_0\), and a random dipole moment \(m\).  
    - Sums the contribution from each dipole at every grid node.  
    - Optionally adds a uniform background field \(B_0\).  
 
-3. **Main script**  
+C. **Main script**  
    - Demonstrates how to call the survey function, print out the random dipole parameters, and visualize the results.
 
 Feel free to adjust:
